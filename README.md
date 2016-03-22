@@ -8,8 +8,7 @@ The information mentioned here is not yet confirmed; but the following steps lea
 ## pom.xml file (Maven)
 
 in Spring Roo, you can with the following statements change the Maven pom.xml file:
-
-'''dependency add --groupId org.pitest --artifactId pitest-maven --version 1.1.9'''
+```dependency add --groupId org.pitest --artifactId pitest-maven --version 1.1.9```
 
 but this will not be sufficient.
 
@@ -32,16 +31,18 @@ it will add
              -->
 
 The following dependency should also be added:
+```
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
             <version>3.3.0</version>
             <scope>test</scope>
         </dependency>        
+```
 
 
+Add to ```<build> <plugins>``` the following
 
-Add to <build> <plugins> the following
 <build>
         <plugins>
             <!-- fsp 20/03/2016 12:38:49, this can not be added by commands in Roo -->
@@ -90,7 +91,7 @@ Add to <build> <plugins> the following
 
 
 The minimal Maven command to launch a pitest is:
-'''mvn org.pitest:pitest-maven:mutationCoverage'''
+```mvn org.pitest:pitest-maven:mutationCoverage```
 
 
 
