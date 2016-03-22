@@ -1,5 +1,5 @@
 # spring-roo-pitest
-How to configure the Maven pom.xml file in Spring Roo projects
+How to configure the Maven pom.xml file in Spring Roo projects for PIT mutation testing (see http://pitest.org/)
 
 # warning
 The information mentioned here is not yet confirmed; but the following steps lead to a correct (but maybe not sufficient or necessary) configuration.
