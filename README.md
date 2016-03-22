@@ -1,5 +1,5 @@
 # spring-roo-pitest
-how to congigure the maven pom.xml file in Spring Roo projects
+How to configure the Maven pom.xml file in Spring Roo projects
 
 # warning
 The information mentioned here is not yet confirmed; but the following steps lead to a correct (but maybe not sufficient or necessary) configuration.
@@ -42,7 +42,7 @@ The following dependency should also be added:
 
 
 Add to ```<build> <plugins>``` the following
-
+```
 <build>
         <plugins>
             <!-- fsp 20/03/2016 12:38:49, this can not be added by commands in Roo -->
@@ -88,9 +88,10 @@ Add to ```<build> <plugins>``` the following
                 </configuration>
             </plugin>
             <!-- end of adding the unit mutation test  -->
-
+```
 
 The minimal Maven command to launch a pitest is:
+
 ```mvn org.pitest:pitest-maven:mutationCoverage```
 
 
